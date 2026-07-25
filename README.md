@@ -123,6 +123,15 @@ def generate(self, text: str, output_path: str, **kwargs) -> str:
 
 再於呼叫端替換 `EdgeTTSEngine` 即可整合其他 TTS 服務或本地模型。
 
+## 台灣中文語音選型
+
+本專案以台灣繁體中文的自然度與口音為優先，目前推薦使用 Edge TTS 的 `zh-TW-*` 語音。
+
+- **CosyVoice 不推薦用於台灣中文**：專案曾實測 CosyVoice 的 300M-SFT 本地模型；其主要訓練語料與口音偏向中國大陸，朗讀台灣繁體中文稿時效果不理想。此外，還需額外建立 conda 環境並下載約 5 GB 的模型，設定與維護成本高，整體投入產出不佳。
+- **ChatTTS 也不適合台灣中文配音**：其訓練模型與中文語音表現同樣以中國大陸語料與口音為主，不適合作為需要台灣口音、繁體中文自然朗讀的預設選擇。
+
+若需求是台灣中文 Podcast、旁白或故事朗讀，建議優先採用 `zh-TW-HsiaoYuNeural`、`zh-TW-YunJheNeural` 或 `zh-TW-HsiaoChenNeural`。
+
 ## 注意事項
 
 - Edge TTS 是雲端服務；生成或查詢語音時都需要可用網路。
