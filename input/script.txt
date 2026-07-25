@@ -1,0 +1,3 @@
+大家好，歡迎使用 AI TTS Voice Generator！
+這是一個兼具高彈性與高質感的文字轉語音系統。
+無論是 Podcast 錄製、YouTube 配音，還是有聲書製作，都能輕鬆完成。

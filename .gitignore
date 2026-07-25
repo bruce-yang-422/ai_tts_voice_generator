@@ -1,0 +1,29 @@
+# Python 暫存檔
+__pycache__/
+*.py[cod]
+
+# 模型與權重檔 (未來加入本地引擎時用,檔案過大不版控)
+pretrained_models/
+models/
+*.pt
+*.safetensors
+
+# 生成的音訊與暫存檔
+output/
+audio_temp/
+*.wav
+*.mp3
+
+# 虛擬環境
+.venv/
+env/
+
+# 外部 clone 的第三方原始碼 (CosyVoice 等,不版控,用 README 記錄如何重新取得)
+third_party/
+
+# 本機憑證/安裝紀錄等環境特定產物
+*.pem
+*.log
+
+# 本機 AI 工具工作階段資料
+.claude/
